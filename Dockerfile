@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
 
-RUN apt-get -y install owhttpd usbutils
+RUN apt-get -y install owhttpd usbutils supervisor
 
 ADD supervisor.owhttpd.conf /etc/supervisor/conf.d/owhttpd.conf
 
